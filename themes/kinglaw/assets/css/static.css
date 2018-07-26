@@ -138,16 +138,8 @@
 6. Cart Search
 
 -------------------------------------------------------------------*/
-@media screen and (min-width: 992px) {
-  #cshero-header-inner #cshero-header-logo img, body #cshero-header-inner #cshero-header-logo-top a img {
-    max-height: 90px; } }
-
-@media screen and (min-width: 992px) {
-  #cshero-header-inner .header-fixed #cshero-header-logo img, body #cshero-header-inner .header-fixed #cshero-header-logo-top a img {
-    max-height: 40px; } }
-
 body.error404 .site-content {
-  background-image: url(http://empsysweb.technic.com.hk/wp-content/themes/kinglaw/assets/images/pt-404.jpg); }
+  background-image: url(http://www.technic.com.hk/wp-content/themes/kinglaw/assets/images/pt-404.jpg); }
 
 @keyframes pulse {
   0% {

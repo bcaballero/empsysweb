@@ -321,11 +321,12 @@
         for (var i = 0; i < renderedResults.length; i++) {
             let maid = renderedResults[i];
             let fullName = maid.first_name;
-            let maidName = maid.ref_no;
 
-            if (maid.last_name !== null) {
+             let maidName = maid.ref_no.split('-')[1]
+            if(maid.last_name && maid.last_name !== null){
                 maidName = maid.last_name.substring(0,3).toUpperCase() + '-' + maid.ref_no.split('-')[1];
             }
+            
 
             if(maid.middle_name != null) {
                 fullName += ' ' + maid.middle_name;

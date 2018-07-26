@@ -30,15 +30,17 @@ global $opt_theme_options;
                                 <?php } ?>
                                 <?php if ($opt_theme_options['top_bar_address'] || $opt_theme_options['top_bar_address2']) { ?>
                                 <li class="cms-item-info-topbar cshero-box-address">
-                                    <i class="fa fa-home" aria-hidden="true"></i>
-                                    <span class="cshero-box-title"><?php echo esc_attr($opt_theme_options['top_bar_address']);?></span>
+                                    <span class="cshero-box-title"><a href="http://www.technic.com.hk/contact-us/#contact-row1"><?php echo esc_attr($opt_theme_options['top_bar_address']);?></a></span>
+									<span class="cshero-box-title"><a href="http://www.technic.com.hk/contact-us/#contact-row1">Central: 2522 6162</a></span>
+									<span class="cshero-box-title"><a href="http://www.technic.com.hk/contact-us/#contact-row2">Mongkok: 2780 9099</a></span>
                                     <span class="cshero-box-title-label"><?php echo esc_attr($opt_theme_options['top_bar_address2']);?></span>
                                 </li>
                                 <?php } ?>
                                 <?php if ($opt_theme_options['top_bar_time'] || $opt_theme_options['top_bar_time_label']) { ?>
                                 <li class="cms-item-info-topbar cshero-box-time">
-                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                    <span class="cshero-box-title"><?php echo esc_attr($opt_theme_options['top_bar_time']);?></span>
+                                    <span class="cshero-box-title"><a href="http://www.technic.com.hk/contact-us/#contact-row2"><?php echo esc_attr($opt_theme_options['top_bar_time']);?></a></span>
+									<span class="cshero-box-title"><a href="http://www.technic.com.hk/contact-us/#contact-row3">Shatin: 2607 0903</a></span>
+									<span class="cshero-box-title"><a href="http://www.technic.com.hk/contact-us/#contact-row3">Tsuen Wan: 2786 3813</a></span>
                                     <span class="cshero-box-title-label"><?php echo esc_attr($opt_theme_options['top_bar_time_label']);?></span>
                                 </li>
                                 <?php } ?>

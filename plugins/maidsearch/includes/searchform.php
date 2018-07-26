@@ -45,7 +45,7 @@ function search_form($content) {
                             <option selected="" value=""> - '.$mslang['formfield_nationality'].' - </option>
                             <option value="Filipino">'.$mslang['formfield_nationality_filipino'].'</option>
                             <option value="Indonesian">'.$mslang['formfield_nationality_indonesian'].'</option>
-                            <option value="Thai">'.$mslang['formfield_nationality_thailand'].'</option>
+                            <option value="Thailand">'.$mslang['formfield_nationality_thailand'].'</option>
                             <option value="Bengali">'.$mslang['formfield_nationality_bengali'].'</option>
                             <option value="SriLanka">'.$mslang['formfield_nationality_sri_lankan'].'</option>
                             <option value="Nepali">'.$mslang['formfield_nationality_nepali'].'</option>
@@ -64,7 +64,7 @@ function search_form($content) {
                             <option selected="" value="">- '.$mslang['formfield_status'].' -</option>
                             <option value="Single">'.$mslang['formfield_status_single'].'</option>
                             <option value="Married">'.$mslang['formfield_status_married'].'</option>
-                            <option value="SingleParent">'.$mslang['formfield_status_single_parent'].'t</option>
+                            <option value="Single Parent">'.$mslang['formfield_status_single_parent'].'</option>
                         </select>
                     </div>
                     <div class="maid_search_form_field">
@@ -129,9 +129,9 @@ function search_form($content) {
                 </div>
 
             </div>
-            <div class="maid_search-pagination top"></div>
+            <div class="maid_search-pagination"></div>
             <div class="maid_search-result"></div>
-            <div class="maid_search-pagination bottom"></div>' .
+            <div class="maid_search-pagination"></div>' .
             '<div id="maid-item-control-dialog" title="---"><p>The content</p></div>
             <div id="maid-inquiry-dialog" title="--">
                 <div id="section-inquiry">
