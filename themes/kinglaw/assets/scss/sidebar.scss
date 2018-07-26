@@ -1,0 +1,42 @@
+#sidebar {
+	.widget_text {
+		.sbi_item {
+			text-align: center;
+		}
+	}
+	.widget {
+		margin-bottom: 72px;
+		&:first-child {
+			
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+		.wg-title {
+			font-size: 20px;
+			text-transform: uppercase;
+			font-family: $font_monter;
+			color: $color_dark0;
+			margin-bottom: 40px;
+			margin-top: -6px;
+			font-weight: 500;
+		}
+	}
+}
+#sidebar #searchform #s {
+	font-family: $font_ptsan;
+}
+
+@media screen and(max-width: 991px) {
+	.widget_search {
+		
+	}
+}
+
+#sidebar {
+	@media screen and(max-width: 767px) {
+		.widget {
+			//overflow: hidden;
+		}
+	}	
+}

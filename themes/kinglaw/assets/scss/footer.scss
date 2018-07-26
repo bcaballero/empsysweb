@@ -1,0 +1,232 @@
+/* ==========================================================================
+   [Start] All Style Footer Top & Footer Bottom
+========================================================================== */
+
+.site-footer, #cms-footer-top, .site-footer ul li, .site-footer ul li a, #cms-footer-bottom, #cms-footer-bottom a  {
+	color: #b3b4b4;
+}
+#cms-footer-bottom a:hover {
+	color: $primary_color;
+}
+
+#colophon {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	font-size: 13px;
+	line-height: 22px;
+	position: relative;
+	&:before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		content: "";
+	}
+
+	#cms-footer-top {
+		position: relative;
+		padding: 80px 0 70px;
+		font-size: 15px;
+		&:before {
+			height: 1px;
+			content: "";
+			display: block;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 100%;
+			position: absolute;
+			z-index: 22;
+		}
+		.widget_media_image {
+			margin-bottom: 30px;
+		}
+		.cms-footer-top-item {
+			.widget_text {
+				margin-bottom: 25px;
+			}
+		}
+		.wg-title {
+			font-size: 25px;
+			line-height: normal;
+			color: #fefefe;
+			font-weight: normal;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+			margin-top: 11px;
+		}
+		.widget_footer_info {
+			li {
+				position: relative;
+				padding-left: 25px;
+				a {
+					&:hover {
+						color: $primary_color;
+					}
+				}
+				i {
+					position: absolute;
+					top: 7px;
+					left: 0;
+				}
+			}
+		}
+		.widget, .cms-recent-post {
+			ul {
+				li { 
+					line-height: 32px;
+					i {
+						color: $primary_color;
+					}
+				}
+			}
+		}
+		.cms-recent-post, .widget_nav_menu {
+			ul {
+				li {
+					a {
+						color: #b3b4b4;
+						&:hover {
+							color: $primary_color;
+						}
+					} 
+					padding-left: 15px;
+					position: relative;
+					&:before {
+						position: absolute;
+						content: "\f105";
+						top:0;
+						left: 0;
+						font-family: FontAwesome;
+						font-size: 15px;
+						color: $primary_color;
+					}
+				}
+			}
+		}
+	}
+	#cms-footer-bottom {
+	    @media (min-width: 992px) {
+	    	padding-top: 34px;
+	    	padding-bottom: 34px;
+	    }
+	    @media (max-width: 991px) {
+	    	padding-top: 30px;
+	    	padding-bottom: 30px;
+	    	text-align: center;
+	    	.widget_cs_social_widget {
+	    		margin-bottom: 30px;
+	    	}
+	    	.cms-footer-bottom-item1, .widget_cs_social_widget {
+	    		text-align: center;
+	    	}
+	    }
+	}
+	.widget_cs_social_widget {
+		ul {
+			li {
+				margin-top: 10px;
+				display: inline-block;
+				a  {
+					padding-left:0;
+					padding-right: 0;
+					display: block;
+				    i {
+
+					    font-size: 16px;
+					    width: 37px;
+					    height: 37px;
+					    line-height: 37px;
+					    background: #222222;
+					    text-align: center;
+					    border-radius: 50%;
+				    	color: $color_white;
+				    	@include transition(all 300ms linear 0ms);
+				    	&:hover {
+				    		background-color: $primary_color;
+				    	}
+				    }
+				}
+			}
+		}
+	}
+	&.cms-footer1 {
+		#cms-footer-top {
+			&:before {
+				background-color: #4d4c4c;
+			}
+		}
+		.cms-footer-bottom-item1 {
+			text-align: center;
+		}
+		#cms-footer-bottom {
+		}
+	}
+	&.cms-footer2 {
+		#cms-footer-top {
+			&:before {
+				background-color: #3f3f3f;
+			}
+		}
+		#cms-footer-bottom {
+			padding-top: 22px;
+			padding-bottom: 22px;
+			min-height: 92px;
+			@media (min-width: 992px) {
+				.cms-footer-bottom-item1 {
+					line-height: 45px;
+					a {
+						&:hover {
+							color: $primary_color;
+						}
+					}
+				}
+				.cms-footer-bottom-item2 {
+					text-align: right;
+					float: right;
+				}
+			}
+		}
+		@media (min-width: 992px) {
+			background-size: cover!important;
+			background-attachment: fixed!important;
+			background-position: center center;
+		}
+	}
+}
+.custom-html-widget {
+
+}
+
+#back_to_top {
+	span {
+		bottom: 41px;
+	    right: 20px;
+	    width: 45px;
+	    height: 45px;
+	    line-height: 45px;
+		text-align: center;
+		position: fixed;
+		background-color: $primary_color;
+		opacity: 0;
+		visibility: hidden;
+		@include transition(all 300ms linear 0ms);
+		color: #fff;
+		font-size: 18px;
+		cursor: pointer;
+		z-index: 1001;
+		background-color: rgba(0, 0, 0, 0.25);
+  		@include border-radius(100%);
+		&:hover {
+			background-color: $primary_color;
+		    @include box-shadow(0 3px 20px rgba(0,0,0,0.15));
+		}
+	}
+	&.on span {
+		opacity: 1;
+		visibility: visible;
+	}
+}

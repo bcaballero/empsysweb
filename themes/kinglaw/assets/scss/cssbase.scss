@@ -1,0 +1,95 @@
+/*------------------------------------------------------------------
+[All Style Shortcode]
+  1. Button
+  2. Counter
+  3. Tabs & Accordion
+  4. Pricing
+  5. Carousel 
+  6. Progressbar
+  7. Alert
+  8. Testimonial
+  9. Team
+  10. Heading
+  11. Fancybox
+  12. Service
+  13. Client
+  14. Blog Carousel
+  15. Blog Grid
+  19. Image Gallery
+  20. Lists
+  21. Timeline
+  22. Pie Chart
+  23. CMS Process
+  24. CMS Portfolio
+-------------------------------------------------------------------*/
+/*
+  1. Button
+*/
+
+.button {
+	width: 135px;
+	height: 45px;
+	color: #fff;
+	border: 1px solid;
+	text-align: center;
+	line-height: 43px;
+	@include border-radius(3px);
+	background-color: $primary_color;
+	display: block;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: bold;
+	@include transition(all 500ms ease 0ms);
+	&:hover {
+		background-color: #222;
+	}
+}
+/*
+	Readmore
+	style: http://prntscr.com/hhzd2y
+*/
+.read-more {
+	font-size: 15px;
+	position: relative;
+	font-family: $font_monter;
+	display: inline-block;
+	line-height: 12px;
+	margin-top: 40px;
+	&:before, &:after {
+		position: absolute;
+	}
+	&:before {
+		position: absolute
+		display: block;
+		content: "";
+		background-color: $primary_color;
+		height: 1px;
+		width: 100%;
+		bottom: 6px;
+		//left: 0;
+		//right: 0;
+		//bottom: 0;
+	}
+	&:after {
+		position: absolute;
+		content: "\f178";
+		top: 1px;
+		//left: 0;
+		//right: 0;
+		//bottom: 0;
+		right: -25px;
+		font-size: 15px;
+		color: $primary_color;
+		font-family: "FontAwesome";
+	}
+	&:hover {
+		color: $primary_color;
+		&:before {
+			width: 100%;
+			opacity: 1;
+		}
+	}
+}
+/*
+	End	Readmore
+*/

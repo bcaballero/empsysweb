@@ -1,0 +1,331 @@
+form.maid-search {
+    padding: 0 10%;
+}
+
+form.maid-search input[type="text"],
+form.maid-search select {
+	background: none !important;
+	line-height: 22px;
+	border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+  	-webkit-border-radius: 0px;
+    -moz-appearance: none;
+    -moz-border-radius: 0px;
+    color: #9c3d97;
+    font-style: italic;
+    padding: 6px 10px !important;
+}
+
+#maid-inquiry-dialog .inquiry-form input[type="text"],
+#maid-inquiry-dialog .inquiry-form input[type="email"],
+#maid-inquiry-dialog .inquiry-form input[type="tel"],
+#maid-inquiry-dialog .inquiry-form select {
+    padding: 6px 10px !important;
+}
+
+#maid-inquiry-dialog span.wpcf7-form-control-wrap {
+    margin-bottom: 5px;
+}
+
+#maid-inquiry-dialog form select {
+    line-height: 22px;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    -moz-appearance: none;
+    -moz-border-radius: 0px;
+}
+
+#maid-inquiry-dialog form input[type="submit"] {
+    margin-top: 18px;
+}
+
+#maid-inquiry-dialog .inquiry-form {
+    display: inline-block;
+    width: 100%;
+}
+
+#maid-inquiry-dialog .selected-maids {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+form.maid-search label.field-label,
+.maid_search-controls label.field-label {
+    color: #9c3d97;
+    margin: 0;
+}
+
+form.maid-search label,
+.maid_search-controls label {
+	font-weight: normal;
+}
+
+form.maid-search label.field-option {
+    padding-left: 20px;
+    margin: 0;
+    display: block;
+}
+
+form.maid-search input[type="submit"] {
+    padding: 15px 70px !important;
+}
+
+form.maid-search input[type="submit"].reset {
+	background: none;
+    color: #00a2c6;
+    border: 1px solid #00a2c6;
+}
+
+center.maid_search_form-description {
+	padding: 30px;
+}
+
+div.maid_search-result {
+	padding: 20px 10%;
+}
+
+.maid_search_form_fields,  .maid_search_result_items {
+	/* display: table; */
+	width: 100%;
+}
+.maid_search_form_row, .maid_search_result_row {
+    /* display: table-row; */
+    display: inline-block;
+}
+
+.maid_search_form_field {
+    padding: 5px;
+}
+
+.maid_search_form_field .field-options {
+    display: inline-block;
+    width: 100%;
+}
+
+.maid_search_form_field .field-options table,
+.maid_search_form_field .field-options table td {
+    border: none;
+}
+
+.maid_search_result_item {
+    display: inline-grid;
+}
+
+.maid_search_form_head,
+.maid_search_result_item, .maid_search_result_head {
+	border: none;
+	padding: 2px 5px !important;
+    vertical-align: bottom;
+}
+.maid_search_form_body, .maid_search_result_body {
+	/* display: table-row-group; */
+}
+
+.maid_search_result_item.selected .item {
+    border-width: 2px;
+    background: #eed4ed;
+}
+
+.maid_search_result_item .item {
+    padding: 20px 10px;
+    border: 1px solid #9c3d97;
+}
+
+.maid_search_result_item .item .selected-maid {
+    position: absolute;
+    right: 26px;
+    top: 26px;
+}
+
+.maid_search_result_item .pic_column {
+    /* position: absolute; */
+}
+
+.maid_search_result_item .pic_column img {
+    border: 1px solid #9c3d97;
+    padding: 3px;
+}
+
+.maid_search_result_item .details_column {
+    /* padding-left: 145px;
+    min-height: 350px;
+    position: relative; */
+}
+
+.maid_search_result_item label.ref_no {
+    color: #9c3d97;
+}
+
+.maid_search_result_item .details_column .details {
+    font-size: 14px;
+}
+
+.maid_search_result_item .details_column ul.controls {
+    display: inline-block;
+    margin: 0 !important;
+}
+
+.maid_search_result_item .details_column ul.controls:nth-child(odd) {
+    margin-left: 20px !important;
+}
+
+.maid_search_result_item .details_column ul.controls li {
+    list-style: none;
+    line-height: 30px;
+}
+
+.maid_search_result_item .details_column ul.controls li a,
+.selected-maid-links a {
+    color: #00a2c6;
+}
+
+.sm-profile {
+    margin: 5px;
+    border: 1px solid #00a2c6;
+}
+
+.sm-profile img, 
+.sm-profile selected-maid-links {
+    padding: 5px 15px;
+}
+
+.remove-maid {
+    float: right;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 5px;
+    line-height: 13px;
+    text-align: center;
+    color: #00a2c6;
+}
+
+form.search-again {
+    float: right;
+}
+
+.selected-maid-links a,
+.selected-maid-links label {
+    display: block;
+}
+
+.maid_search-pagination {
+    display: inline-block;
+    width: 100%;
+}
+
+.maid_search-pagination.top {
+    margin-top: 30px;
+}
+
+.maid_search-pagination.bottom {
+    margin-bottom: 50px;
+}
+
+.maid_search-pagination a {
+    color: #565656;
+}
+
+.maid_search-pagination .pages {
+    list-style: none;
+    text-align: center;
+    margin: 0 !important;
+}
+
+.maid_search-pagination .pages li {
+    display: inline-block;
+    width: 25px;
+}
+
+.maid_search-pagination .pages li.current {
+    background-color: #00a2c6;
+}
+
+.maid_search-pagination .pages li.current a {
+    color: #ffffff;
+}
+
+.maid_search-controls {
+    display: none;
+    padding: 0 10%;
+}
+
+.maid_search-controls .maid-control-buttons {
+    text-align: right;
+}
+
+.maid_search-controls label {
+    font-size: small;
+    background-color: #00a2c6;
+    border: none;
+    border-radius: 2em !important;
+    padding: 3px 10px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.maid_search-controls input[type="submit"] {
+    background-color: #00a2c6;
+    border: none;
+    border-radius: 2em !important;
+    padding: 10px;
+    font-size: small;
+}
+
+.maid_search-controls .maid-count {
+    margin-top: 0;
+}
+
+#maid-item-control-dialog video {
+    width: 100%;
+}
+
+.ui-dialog-titlebar {
+    height: auto !important;
+}
+
+.search-divider {
+    width: 100%;
+    display: inline-block;
+}
+
+body.dialog-disable-scroll {
+    height: 100%;
+    overflow: hidden;
+}
+
+#section-video {
+    display: none;
+}
+
+#section-video .vid-container {
+    text-align: center;
+}
+
+#section-video .vid-container video {
+    width: 80%;
+}
+
+#section-video .vid-container.mobile video {
+    width: 100%;
+}
+
+#section-video .back-section-inquiry {
+    color: #00a2c6;
+}
+
+@media only screen and (max-width: 480px) {
+    form.maid-search,
+    .maid_search-controls,
+    div.maid_search-result {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    form.maid-search label.field-option {
+            padding-left: 10px;
+    }
+}
