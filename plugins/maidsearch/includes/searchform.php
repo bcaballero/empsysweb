@@ -215,7 +215,7 @@ function wpcf7_dynamic_to_filter_example($recipient, $args=array()) {
             $recipient = 'causewaybay@technic.com.hk';
         } elseif ($branch == 'Central' || $branch == '中 環') {
             $recipient = 'central@technic.com.hk';
-        } elseif ($branch == 'Mongkok' || '旺 角') {
+        } elseif ($branch == 'Mongkok' || $branch == '旺 角') {
             $recipient = 'mongkok@technic.com.hk';
         } elseif ($branch == 'Tseung Kwan O' || $branch == '將 軍 澳') {
             $recipient = 'tko@technic.com.hk';
