@@ -493,7 +493,8 @@
 
         checkSelectedAll();
         canInquire();
-        adjustHeight();
+
+        setTimeout(adjustHeight, 1000);
     }
 
     function selectAllMaids() {
@@ -549,14 +550,17 @@
         if($(document).width() > 767) {
             $('.maid_search_result_row').each(function() {
                 var $elem = $(this);
+                var $left = $elem.find('.maid_search_result_item:nth-child(1)');
+                var $right = $elem.find('.maid_search_result_item:nth-child(2)');
                 
-                if($($elem.find('.maid_search_result_item')[0]).height() > $($elem.find('.maid_search_result_item')[1]).height()) {
-                    $($elem.find('.maid_search_result_item')[1]).height($($elem.find('.maid_search_result_item')[0]).height());
+                if($left.outerHeight() > $right.outerHeight()) {
+                    $right.outerHeight($left.outerHeight());
                 }
 
-                if($($elem.find('.maid_search_result_item')[1]).height() > $($elem.find('.maid_search_result_item')[0]).height()) {
-                    $($elem.find('.maid_search_result_item')[0]).height($($elem.find('.maid_search_result_item')[1]).height());
+                if($right.outerHeight() > $left.outerHeight()) {
+                    $left.outerHeight($right.outerHeight());
                 }
+
             });
         }
     }
